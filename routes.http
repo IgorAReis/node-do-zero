@@ -1,0 +1,30 @@
+POST http://localhost:3333/videos
+Content-Type: application/json
+
+{
+    "title": "VIdeo Node",
+    "description": "Esse é o primeiro Video",
+    "duration": 180
+}
+
+###
+
+GET http://localhost:3333/videos?search=python
+
+
+###
+
+PUT http://localhost:3333/videos/c07e7003-9306-4fd3-b1b6-98c8fa58f985
+Content-Type: application/json
+
+{
+    "title": "Video Python",
+    "description": "Esse é o primeiro Video de Python",
+    "duration": 180
+}
+
+
+###
+
+DELETE http://localhost:3333/videos/c07e7003-9306-4fd3-b1b6-98c8fa58f985
+    
